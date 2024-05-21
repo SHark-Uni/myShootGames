@@ -1,0 +1,6 @@
+NUMBER:
+	3
+FILENAME:
+	movingPattern1.txt
+	movingPattern2.txt
+	movingPattern3.txt

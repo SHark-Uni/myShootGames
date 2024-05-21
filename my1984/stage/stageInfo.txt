@@ -1,0 +1,6 @@
+NUMBER :
+	3
+FILENAME :
+	stage1.txt
+	stage2.txt
+	stage3.txt

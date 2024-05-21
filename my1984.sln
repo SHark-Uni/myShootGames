@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "my1984", "my1984\my1984.vcxproj", "{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stage", "stage", "{AFD1184E-157F-4E93-B2A9-407D0BABE563}"
+	ProjectSection(SolutionItems) = preProject
+		stage1.txt = stage1.txt
+		stage2.txt = stage2.txt
+		stage3.txt = stage3.txt
+		stageInfo.txt = stageInfo.txt
+		stage파일작성규칙.txt = stage파일작성규칙.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Debug|x64.ActiveCfg = Debug|x64
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Debug|x64.Build.0 = Debug|x64
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Debug|x86.Build.0 = Debug|Win32
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Release|x64.ActiveCfg = Release|x64
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Release|x64.Build.0 = Release|x64
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Release|x86.ActiveCfg = Release|Win32
+		{B2EBE8E3-10FC-48B2-96AC-CF4F3CFCF03D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0332E79B-7361-4FAB-AA66-7861850ABBC9}
+	EndGlobalSection
+EndGlobal
