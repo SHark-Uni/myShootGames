@@ -47,6 +47,8 @@ void DrawEnemy();
 void DrawEnemyBullet();
 void DrawPlayerBullet();
 void DrawClearScene();
+void DrawHp();
+
 
 void moveEnemy();
 void moveEnemyBullet();
@@ -102,7 +104,7 @@ int main(void)
 				// GAME 종료
 				if (menuCursorPos.y == END_LINE) 
 				{
-					exit(0);
+					goto RETURNS;
 				}
 			}
 			break;
@@ -181,14 +183,15 @@ int main(void)
 
 			//Render
 			DrawEnemy();
+			DrawHp();
 			DrawEnemyBullet();
 			DrawPlayerBullet();
 			break;
 		case CLEAR:
 			Buffer_Clear();
 			DrawClearScene();
-			//CleanUpStageMem();
-			//CleanUpEnemyMem();
+			Buffer_Flip();
+			goto RETURNS;
 			break;
 		case DEAD:
 			InitGame();
@@ -203,6 +206,9 @@ int main(void)
 		}
 		// 프레임 맞추기용 대기 Sleep(X)
 	}
+RETURNS:
+	CleanUpStageMem();
+	CleanUpEnemyMem();
 	return 0;
 }
 
@@ -268,6 +274,13 @@ void InitGame()
 }
 
 
+void DrawHp()
+{
+
+	Sprite_Draw(0, 23, 'H');
+	Sprite_Draw(1, 23, 'P');
+	Sprite_Draw(2, 23, '0' + PLAYER.hp);
+}
 
 void DrawEnemy()
 {
