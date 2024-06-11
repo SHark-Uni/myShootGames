@@ -3,23 +3,29 @@
 
 #define dfSCREEN_WIDTH		81		// 콘솔 가로 80칸 + NULL
 #define dfSCREEN_HEIGHT		24		// 콘솔 세로 24칸
-//-------------------------------------------------------------
-// 콘솔 제어를 위한 준비 작업.
-//
-//-------------------------------------------------------------
+#define MENU_START_LINE (15)
+#define MENU_END_LINE (16)
+
+extern char szScreenBuffer[dfSCREEN_HEIGHT][dfSCREEN_WIDTH];
+
+typedef struct menuPos {
+	int x;
+	int y;
+} menuPos_t;
+
+extern menuPos_t menuCursorPos;
+
 void cs_Initial(void);
-
-//-------------------------------------------------------------
-// 콘솔 화면의 커서를 X, Y 좌표로 이동시킨다.
-//
-//-------------------------------------------------------------
 void cs_MoveCursor(int iPosX, int iPosY);
-
-//-------------------------------------------------------------
-// 콘솔 화면을 조기화 한다.
-//
-//-------------------------------------------------------------
 void cs_ClearScreen(void);
 
+//각종 Draw
+void Sprite_Draw(int iX, int iY, char chSprite);
 
+void RenderAllElements();
+void DrawMainScreen();
+void DrawClearScene();
+//Render
+void Buffer_Flip(void);
+void Buffer_Clear(void);
 #endif

@@ -131,7 +131,9 @@
     <ClCompile Include="console.cpp" />
     <ClCompile Include="enemy.cpp" />
     <ClCompile Include="enemy.h" />
+    <ClCompile Include="KeyInput.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="move.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="stage.cpp" />
     <ClCompile Include="test.cpp" />
@@ -139,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="console.h" />
+    <ClInclude Include="KeyInput.h" />
+    <ClInclude Include="move.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="stage.h" />
   </ItemGroup>
